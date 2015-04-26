@@ -4,7 +4,8 @@ build:
     - script:
         name: Hello World
         code: echo "Hello World"
-  after-steps:
+deploy:
+  steps:
     - koudaiii/install-container-transform@0.0.3:
       key: $AWS_KEY
       secret: $AWS_SECRET
