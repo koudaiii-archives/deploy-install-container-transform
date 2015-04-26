@@ -1,0 +1,9 @@
+box: wercker/python
+deploy:
+  steps:
+      - koudaiii/install-container-transform@0.0.2
+          key: $AWS_KEY
+          secret: $AWS_SECRET
+          region: $AWS_REGION
+          cluster: $AWS_CLUSTER
+          definition: $AWS_DEFINITION
